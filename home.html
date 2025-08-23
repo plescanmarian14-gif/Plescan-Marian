@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asigurare auto RCA ieftin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://images.unsplash.com/photo-1601597115810-d2b0a6bde00f') no-repeat center center/cover;
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .hero a {
+            padding: 15px 30px;
+            background-color: #ff9900;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .hero a:hover {
+            background-color: #e68a00;
+        }
+        .section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0056b3;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 15px 25px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0056b3;
+            color: #fff;
+        }
+        @media(max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Broker Asigurări Online</h1>
+</header>
+
+<nav>
+    <a href="#home">Acasă</a>
+    <a href="#products">Produse</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Asigură-ți viitorul cu cele mai bune oferte</h2>
+    <a href="#contact">Obține ofertă acum</a>
+</section>
+
+<section class="section" id="products">
+    <h2>Tipuri de Asigurări</h2>
+    <div class="products">
+        <div class="product">
+            <h3>RCA</h3>
+            <p>Asigurarea obligatorie pentru autoturisme.</p>
+        </div>
+        <div class="product">
+            <h3>CASCO</h3>
+            <p>Protejează-ți mașina împotriva daunelor.</p>
+        </div>
+        <div class="product">
+            <h3>Locuință</h3>
+            <p>Asigură-ți casa împotriva accidentelor și furtului.</p>
+        </div>
+        <div class="product">
+            <h3>Sănătate</h3>
+            <p>Protecție pentru tine și familia ta.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contactează-ne</h2>
+    <div class="contact-form">
+       <form action="https://formspree.io/f/yourFormID" method="POST">
+    <input type="text" name="name" placeholder="Nume" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <select name="insurance" required>
+        <option value="">Selectează tipul de asigurare</option>
+        <option value="RCA">RCA</option>
+        <option value="CASCO">CASCO</option>
+        <option value="Locuinta">Locuință</option>
+        <option value="Sanatate">Sănătate</option>
+    </select>
+    <textarea name="message" rows="5" placeholder="Mesaj"></textarea>
+    <button type="submit">Trimite</button>
+</form>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Broker Asigurări Online. Toate drepturile rezervate.
+</footer>
+
+</body>
+</html>
